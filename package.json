@@ -1,25 +1,31 @@
 {
-  "name": "inuit-list-block",
-  "version": "0.4.2",
-  "description": "A simple blocky-list object for the inuitcss framework",
+  "name": "aleut-list-block",
+  "version": "0.5.0",
+  "description": "A simple blocky-list object for the aleutcss framework (based on Harry Roberts inuitcss framework)",
   "main": "_objects.list-block.scss",
   "repository": {
     "type": "git",
-    "url": "https://github.com/inuitcss/objects.list-block.git"
+    "url": "https://github.com/aleutcss/objects.list-block.git"
   },
-  "author": "Harry Roberts <harry@csswizardry.com>",
-  "license": "Apache 2",
+  "contributors": [
+    {"name": "Marius Hauken", "url": "http://twitter.com/mhauken", "email": "hauken@netliferesearch.com"},
+    {"name": "Robin Sandborg", "url": "http://twitter.com/robrobro", "email": "robin@netliferesearch.com"},
+    {"name": "Knut Melvær", "url": "http://twitter.com/kmelve", "email": "knut@netliferesearch.com"},
+    {"name": "Harry Roberts", "email": "harry@csswizardry.com"}
+  ],
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/inuitcss/objects.list-block/issues"
+    "url": "https://github.com/aleutcss/objects.list-block/issues"
   },
-  "homepage": "https://github.com/inuitcss/objects.list-block",
+  "homepage": "https://github.com/aleutcss/objects.list-block",
   "keywords": [
-    "inuitcss",
+    "aleutcss",
+    "aleut",
     "oocss",
     "css"
   ],
   "dependencies": {
-    "inuit-defaults": "~0.2.1",
-    "inuit-functions": "~0.2.0"
+    "@aleut/aleut-defaults": "~0.3.0",
+    "@aleut/aleut-functions": "~0.3.0"
   }
 }
