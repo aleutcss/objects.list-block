@@ -7,106 +7,95 @@
  */
 
 // Predefine the variables below in order to alter and enable specific features.
-$inuit-list-block-namespace:        $inuit-namespace !default;
 
-$inuit-list-block-padding:          $spacing !default;
-$inuit-list-block-padding--tiny:      quarter($inuit-list-block-padding) !default;
-$inuit-list-block-padding--small:       halve($inuit-list-block-padding) !default;
-$inuit-list-block-padding--large:      double($inuit-list-block-padding) !default;
-$inuit-list-block-padding--huge:    quadruple($inuit-list-block-padding) !default;
+$o-list-block-padding:          $spacing !default;
+$o-list-block-padding--tiny:      quarter($o-list-block-padding) !default;
+$o-list-block-padding--small:       halve($o-list-block-padding) !default;
+$o-list-block-padding--large:      double($o-list-block-padding) !default;
+$o-list-block-padding--huge:    quadruple($o-list-block-padding) !default;
 
-$inuit-enable-list-block--tiny:     false !default;
-$inuit-enable-list-block--small:    false !default;
-$inuit-enable-list-block--large:    false !default;
-$inuit-enable-list-block--huge:     false !default;
+$o-list-block--tiny:     false !default;
+$o-list-block--small:    false !default;
+$o-list-block--large:    false !default;
+$o-list-block--huge:     false !default;
 
-.#{$inuit-list-block-namespace}o-list-block,
-%#{$inuit-list-block-namespace}o-list-block {
+.o-list-block {
     margin:  0;
     padding: 0;
     list-style: none;
 
     > li {
-        @extend %#{$inuit-list-block-namespace}o-list-block__item;
+        padding: $o-list-block-padding;
     }
 
 }
 
-    .#{$inuit-list-block-namespace}o-list-block__item,
-    %#{$inuit-list-block-namespace}o-list-block__item {
-        padding: $inuit-list-block-padding;
+    .o-list-block__item {
+        padding: $o-list-block-padding;
     }
 
 
 
 
 
-@if ($inuit-enable-list-block--tiny == true) {
+@if ($o-list-block--tiny == true) {
 
     /**
      * Tiny list-blocks.
      */
 
-    .#{$inuit-list-block-namespace}o-list-block--tiny,
-    %#{$inuit-list-block-namespace}o-list-block--tiny {
+    .o-list-block--tiny {
 
-        > .#{$inuit-list-block-namespace}o-list-block__item,
-        > %#{$inuit-list-block-namespace}o-list-block__item {
-            padding: $inuit-list-block-padding--tiny;
+        > .o-list-block__item {
+            padding: $o-list-block-padding--tiny;
         }
 
     }
 
 }
 
-@if ($inuit-enable-list-block--small == true) {
+@if ($o-list-block--small == true) {
 
     /**
      * Small list-blocks.
      */
 
-    .#{$inuit-list-block-namespace}o-list-block--small,
-    %#{$inuit-list-block-namespace}o-list-block--small {
+    .o-list-block--small  {
 
-        > .#{$inuit-list-block-namespace}o-list-block__item,
-        > %#{$inuit-list-block-namespace}o-list-block__item {
-            padding: $inuit-list-block-padding--small;
+        > .o-list-block__item {
+            padding: $o-list-block-padding--small;
         }
 
     }
 
 }
 
-@if ($inuit-enable-list-block--large == true) {
+@if ($o-list-block--large == true) {
 
     /**
      * Large list-blocks.
      */
 
-    .#{$inuit-list-block-namespace}o-list-block--large,
-    %#{$inuit-list-block-namespace}o-list-block--large {
+    .o-list-block--large {
 
-        > .#{$inuit-list-block-namespace}o-list-block__item,
-        > %#{$inuit-list-block-namespace}o-list-block__item {
-            padding: $inuit-list-block-padding--large;
+        > .o-list-block__item {
+            padding: $o-list-block-padding--large;
         }
 
     }
 
 }
 
-@if ($inuit-enable-list-block--huge == true) {
+@if ($o-list-block--huge == true) {
 
     /**
      * Huge list-blocks.
      */
 
-    .#{$inuit-list-block-namespace}o-list-block--huge,
-    %#{$inuit-list-block-namespace}o-list-block--huge {
+    .o-list-block--huge {
 
-        > .#{$inuit-list-block-namespace}o-list-block__item,
-        > %#{$inuit-list-block-namespace}o-list-block__item {
-            padding: $inuit-list-block-padding--huge;
+        > .o-list-block__item {
+            padding: $o-list-block-padding--huge;
         }
 
     }
