@@ -35,3 +35,14 @@ For example:
 	<li class="o-list-block__item">List-item</li>
 </ul>
 ```
+
+### Enable options
+To enable the optional classes set the variables to `true` before you import
+the `_objects.list-block.scss`-file.
+
+```scss
+$o-list-block--tiny:     false !default;
+$o-list-block--small:    false !default;
+$o-list-block--large:    false !default;
+$o-list-block--huge:     false !default;
+```
