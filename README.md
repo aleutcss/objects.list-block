@@ -18,6 +18,7 @@ Basic usage of the list-block object uses the required classes:
 	<li class="o-list-block__item">List-item</li>
 </ul>
 ```
+![Example of o-list-block](https://github.com/aleutcss/Aleut/tree/gh-pages/public/img/o-list-block.png)
 
 The only valid children of the `.o-list-block` node are `.o-list-block__item`.
 
@@ -35,6 +36,8 @@ For example:
 	<li class="o-list-block__item">List-item</li>
 </ul>
 ```
+
+![Example of o-list-block options](https://github.com/aleutcss/Aleut/tree/gh-pages/public/img/o-list-block-options.png)
 
 ### Enable options
 To enable the optional classes set the variables to `true` before you import
