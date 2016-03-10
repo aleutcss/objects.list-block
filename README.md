@@ -5,7 +5,7 @@ The `list-block` object simply creates blocky lists from `ul`s or `ol`s.
 ## Install using npm:
 
 ```ssh
-    $ npm install --save-dev aleut-list-block
+    $ npm install --save-dev @aleut/objects.list-block
 ```
 
 ## Usage
